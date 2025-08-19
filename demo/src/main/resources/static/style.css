@@ -1,0 +1,130 @@
+.form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #f44336;
+    background: #e8f5e9; /* Light green */
+    /* Red border */
+}
+ .label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.welcome-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    text-align: center;
+	color: blue;
+}
+.welcome-title {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
+	color: blue;
+}
+.welcome-message {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+	color: black;
+}
+ .background {
+	background-color: lightgreen;
+}
+.login-container{
+	max-width: 400px;
+	    margin: 60px auto;
+	    padding: 30px 40px;
+	    background: #fff;
+	    border-radius: 10px;
+	    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+	    text-align: center;
+		color: blue;
+}
+.container {
+     padding: 20px;
+     max-width: 450px;
+     margin: 30px auto;
+   }
+
+   h2 {
+     font-size: 20px;
+   }
+
+   .section {
+     background-color: #1c2a3a;
+     border-radius: 10px;
+     padding: 15px;
+     margin: 15px 0;
+     cursor: pointer;
+   }
+
+   .section:hover {
+     background-color: #283a50;
+   }
+
+   .bank {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+
+   .upi-apps {
+     display: flex;
+     justify-content: space-around;
+     padding: 15px 0;
+	 color: white;
+   }
+
+   .upi-app {
+     text-align: center;
+   }
+
+   .upi-app img {
+     width: 40px;
+     height: 40px;
+     margin-bottom: 5px;
+   }
+   .payment-container {
+     width: 400px; /* or your actual width */
+     margin: 0 auto;
+     background-color: white;
+     padding: 20px;
+     border: 1px solid orange;
+     border-radius: 10px;
+     text-align: center;
+	 padding-left :2px;
+   }
+
+   .pay-button {
+     margin-top: 20px;
+     padding: 10px 20px;
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+
+   .pay-button:hover {
+     background-color: #333;
+   }

@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kafka Messages</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="welcome-container" style="border: 3px solid #333;">
+        <h1>Recent Kafka Messages</h1>
+        <ul>
+            <li th:each="msg : ${messages}" th:text="${msg}"></li>
+        </ul>
+        <a href="/welcome">Back to Welcome</a>
+    </div>
+</body>
+</html>

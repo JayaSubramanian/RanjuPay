@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="/style.css" />
+<title>Simple landing page</title>
+</head>
+<body class="background">
+	<center>
+    <div style="border: 3px solid red; padding:20px; width: fit-content; margin- auto; text-align: center; margin-top: 100px;" class="welcome-container">
+        <h1 class="welcome-title" th:text="'Welcome ' + ${name} + '!!'"></h1>
+        <div class="welcome-message">to Ranju Pay Login App Example</div>
+		<a th:href="@{/enter-amount}" class="pay-btn" style="margin-left:20px; padding:10px 20px; background:#4CAF50; color:white; border:none; border-radius:4px; text-decoration:none; cursor:pointer;">Go to Payment</a>
+        
+
+		</div>
+    </div>
+	</center>
+</body>
+ 
+ 
+</html>
+

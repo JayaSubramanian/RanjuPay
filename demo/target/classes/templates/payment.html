@@ -1,0 +1,67 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Payment</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<div class="welcome-container" style="border: 3px solid orange;">
+		<h1>Ranju Pay</h1>
+		<form th:action="@{/payment}" method="post">
+			<input type="hidden" name="amount" th:value="${amount}" />
+			  <div class="container">
+				<h2>Select Payment Method</h2>
+				<p style="color: #aaa;">Pay using mandate account</p>
+
+				<div class="section bank">
+				  <div>
+					<b>🏦 Tamilnad Mercantile Bank</b><br />
+					********4490
+				  </div>
+				  <div>→</div>
+				</div>
+
+				<hr style="border-color: #444;"/>
+
+				<h3>UPI Apps</h3>
+				<div class="section upi-apps">
+				  <div class="upi-app">
+					<img src="https://static.vecteezy.com/system/resources/previews/051/336/375/non_2x/paytm-upi-transparent-icon-free-png.png" />
+					<a href="'upi://pay?pa=6382380354@ptyes&pn=Jaya%20Subramanian%20Kamala%20Moorthy&am=' + ${amount} + '&cu=INR'">
+					<div style="font-size: 12px;">Paytm</div>
+				  </div>
+				  <div class="upi-app">
+					<img src="https://img.icons8.com/?size=512&id=OYtBxIlJwMGA&format=png" />
+					<a href="'upi://pay?pa=6382380354-2@ybl&pn=Ranju%20rock%20star&am=' + ${amount} + '&cu=INR'">
+					<div style="font-size: 12px;">PhonePe</div>
+				  </div>
+				  <div class="upi-app">
+					<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-pay-icon.png" />
+					<a href="upi://pay?pa=jayasubramanian9101-3@okaxis&pn=Ranju%20rock%20star&am=5000&cu=INR">
+						<div style="font-size: 12px;">Gpay</div>
+					</a>
+				  </div>
+				  <div class="upi-app" style="background:white; border-radius:8px; padding:8px;">
+					<img src="https://static.thenounproject.com/png/783562-200.png"/>
+					<div style="font-size: 12px; color:#333;">Others</div>
+				  </div>
+				</div>
+
+				<div class="section">💳 Debit Card</div>
+				<div class="section">🏦 Net Banking</div>
+			  </div>
+
+			  <div class="payment-container">
+				 <button class="pay-button">Pay Now</button>
+			   </div>
+
+			   <div th:if="${message}" style="color:green; font-weight:bold; margin-top:10px;">
+			   			<p th:text="${message}"></p>
+			   			<form th:action="@{/logout}" method="post">
+			   				<button type="submit" class="logout-btn">Logout</button>
+			   			</form>
+			   		</div>
+	</div>
+</body>
+</html>

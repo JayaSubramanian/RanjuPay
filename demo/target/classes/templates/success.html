@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Payment Success</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<div class="success">
+	<img src="https://thumbs.dreamstime.com/b/black-checkmark-icon-payment-successful-text-bold-font-white-background-ideal-websites-apps-email-350676078.jpg" style="height:200px;" />
+    <h2 th:text="${message}"></h2>
+	<p>Thank you for your payment!</p>
+	<div style="margin-top:20px;">
+		<a href="/kafka-messages" style="padding:10px 20px; background:#333; color:white; border-radius:4px; text-decoration:none;">View Kafka Messages</a>
+	</div>
+</body>
+</html>

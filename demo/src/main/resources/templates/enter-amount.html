@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<!-- Inside your form in payment.html -->
+	<input type="hidden" name="amount" th:value="${amount}" />
+
+    <div class="welcome-container" style="border: 3px solid orange;">
+        <h1>Enter Payment Amount</h1>
+        <form th:action="@{/enter-amount}" method="post">
+            <div class="container">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required style="width:100%;padding:8px;margin:10px 0;" />
+            </div>
+            <div class="payment-container">
+                <button class="pay-button" type="submit">Pay Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
